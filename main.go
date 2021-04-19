@@ -35,8 +35,9 @@ func main() {
 		}
 		count++
 	}
+	fmt.Printf("任务总数：%d\n",count)
 	for k, v := range result {
-		fmt.Printf("类别：%s 任务总数：%d 占比：%.2f%%\n", k, len(v), 100*(float64(len(v))/float64(count)))
+		fmt.Printf("类别：%s 任务数：%d 占比：%.2f%%\n", k, len(v), 100*(float64(len(v))/float64(count)))
 	}
 }
 
